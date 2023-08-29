@@ -1,0 +1,112 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    opacity: 0; /* Menyembunyikan halaman saat dimuat */
+    animation: slide-in 0.5s ease forwards; /* Animasi slide-in saat halaman dimuat */
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Animasi untuk tombol */
+  @keyframes pulse {
+    0% {
+      background-color: #333;
+    }
+    50% {
+      background-color: #555;
+    }
+    100% {
+      background-color: #333;
+    }
+  }
+  
+  .button-animation {
+    animation: pulse 1s infinite;
+  }
+  
+  /* Tombol Choose File */
+  input[type="file"] {
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .file-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-button:hover {
+    background-color: #555;
+  }
+  

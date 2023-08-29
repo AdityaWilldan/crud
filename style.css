@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    opacity: 0; /* Menyembunyikan halaman saat dimuat */
+    animation: fade-in 0.5s ease forwards; /* Animasi fade-in saat halaman dimuat */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animasi untuk tombol */
+a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+/* Animasi untuk tombol cari */
+button[type="submit"] {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Animasi untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    opacity: 0; /* Menyembunyikan tabel saat dimuat */
+    animation: fade-in 0.5s ease forwards; /* Animasi fade-in saat halaman dimuat */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Animasi untuk gambar */
+img {
+    max-width: 80px;
+    max-height: 80px;
+    opacity: 0; /* Menyembunyikan gambar saat dimuat */
+    animation: fade-in 0.5s ease forwards; /* Animasi fade-in saat gambar dimuat */
+}
