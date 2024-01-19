@@ -1,0 +1,10 @@
+{
+    "name": "vendor/crud",
+    "description": "simple crud",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

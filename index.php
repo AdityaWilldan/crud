@@ -98,6 +98,7 @@
         </tr>
             <?php $i++; ?>
             <?php endforeach; ?>
+            <a href="laporanexcel.php">unduh</a>
 
     </table>
 
